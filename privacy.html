@@ -27,32 +27,34 @@
     <h1>Privacy Policy</h1>
     <p class="updated">Last updated: July 2026</p>
 
-    <p>This policy applies to all apps published by Sandeepak Madhavan on the Freshworks Marketplace, including <strong>CalendarGuard</strong>. It explains what data these apps access, how it's used, and how it's protected.</p>
+    <p>This policy applies to all apps published by Sandeepak Madhavan on the Freshworks Marketplace. It explains what data these apps access, how it's used, and how it's protected. Each app's specific data access is listed separately in the "Per-app data access" section below.</p>
 
-    <h2>What data is accessed</h2>
+    <h2>What is not collected, across all apps</h2>
     <ul>
-      <li><strong>Google Calendar data:</strong> CalendarGuard reads calendar event details (title and time range) from the calendar URL you provide, solely to detect out-of-office events.</li>
-      <li><strong>Freshdesk agent data:</strong> the app reads and updates your Freshdesk availability status, and reads your agent name and email to display them within the app.</li>
-    </ul>
-
-    <h2>What is not collected</h2>
-    <ul>
-      <li>No calendar or Freshdesk data is sent to, sold to, or shared with any third party.</li>
+      <li>No calendar, ticket, or Freshdesk data is sent to, sold to, or shared with any third party.</li>
       <li>No data is used for advertising or analytics profiling.</li>
-      <li>No calendar content is stored beyond what's needed to operate the automation (event time ranges and titles relevant to your configured out-of-office tags).</li>
+      <li>No data is stored beyond what's needed to operate each app's specific automation, as described per app below.</li>
     </ul>
 
     <h2>Where data is stored</h2>
-    <p>Configuration (such as your calendar URL and out-of-office tags) is stored using Freshworks' own app storage (KVS), scoped to your Freshdesk account and agent. It is not copied to any separate external database or server operated by the developer.</p>
+    <p>Configuration for each app (such as connected accounts or preferences) is stored using Freshworks' own app storage (KVS), scoped to your Freshdesk account and agent. It is not copied to any separate external database or server operated by the developer.</p>
 
     <h2>Data retention</h2>
-    <p>Stored configuration is retained for as long as the app remains installed and connected. Disconnecting your calendar or uninstalling the app removes the associated stored configuration.</p>
+    <p>Stored configuration is retained for as long as an app remains installed and connected. Disconnecting an integration or uninstalling an app removes its associated stored configuration.</p>
 
     <h2>Your choices</h2>
     <ul>
-      <li>You control which calendar URL is connected, and can disconnect or replace it at any time from within the app.</li>
-      <li>You control which tags are used to detect out-of-office events.</li>
+      <li>You control which accounts or integrations are connected to each app, and can disconnect or replace them at any time from within the app.</li>
       <li>You can request removal of any retained configuration by contacting support (see the <a href="support.html">Support</a> page).</li>
+    </ul>
+
+    <h2>Per-app data access</h2>
+    <p>The section below lists exactly what each published app accesses. As new apps are published, a new subsection is added here — the rest of this policy applies to all of them equally.</p>
+
+    <h3 style="font-family:'Space Grotesk',sans-serif; font-size:16px; font-weight:600; margin:24px 0 8px;">CalendarGuard</h3>
+    <ul>
+      <li><strong>Google Calendar (read-only):</strong> event titles and time ranges, from the calendar URL you provide, solely to detect out-of-office events.</li>
+      <li><strong>Freshdesk:</strong> reads and updates your agent availability status, and reads your agent name and email to display them within the app.</li>
     </ul>
 
     <h2>Changes to this policy</h2>

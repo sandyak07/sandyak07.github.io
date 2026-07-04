@@ -249,6 +249,106 @@ nav.site-nav a:focus-visible {
 .prose a { color: var(--accent); }
 
 /* ===================================================================
+   App detail page
+   =================================================================== */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+.back-link:hover { color: var(--accent); }
+
+.app-detail-header {
+  padding: 8px 0 32px;
+}
+
+.app-detail-header .card-top {
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.app-detail-header h1 {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.app-detail-header .lede {
+  color: var(--text-secondary);
+  font-size: 16px;
+  max-width: 60ch;
+  margin: 0;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 32px 0 40px;
+}
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+  display: grid;
+  gap: 14px;
+}
+
+.feature-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+.feature-list li .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--status-green);
+  margin-top: 8px;
+  flex: none;
+}
+
+.feature-list li strong {
+  color: var(--text-primary);
+}
+
+.app-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.app-links a {
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.app-links a:hover { text-decoration: underline; }
+
+/* ===================================================================
    Footer
    =================================================================== */
 footer.site-footer {
