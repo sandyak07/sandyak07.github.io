@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Sandeepak Madhavan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Sandeepak Madhavan</a>
+    <nav class="site-nav">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="prose">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: July 2026</p>
+
+    <p>This policy applies to all apps published by Sandeepak Madhavan on the Freshworks Marketplace, including <strong>CalendarGuard</strong>. It explains what data these apps access, how it's used, and how it's protected.</p>
+
+    <h2>What data is accessed</h2>
+    <ul>
+      <li><strong>Google Calendar data:</strong> CalendarGuard reads calendar event details (title and time range) from the calendar URL you provide, solely to detect out-of-office events.</li>
+      <li><strong>Freshdesk agent data:</strong> the app reads and updates your Freshdesk availability status, and reads your agent name and email to display them within the app.</li>
+    </ul>
+
+    <h2>What is not collected</h2>
+    <ul>
+      <li>No calendar or Freshdesk data is sent to, sold to, or shared with any third party.</li>
+      <li>No data is used for advertising or analytics profiling.</li>
+      <li>No calendar content is stored beyond what's needed to operate the automation (event time ranges and titles relevant to your configured out-of-office tags).</li>
+    </ul>
+
+    <h2>Where data is stored</h2>
+    <p>Configuration (such as your calendar URL and out-of-office tags) is stored using Freshworks' own app storage (KVS), scoped to your Freshdesk account and agent. It is not copied to any separate external database or server operated by the developer.</p>
+
+    <h2>Data retention</h2>
+    <p>Stored configuration is retained for as long as the app remains installed and connected. Disconnecting your calendar or uninstalling the app removes the associated stored configuration.</p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>You control which calendar URL is connected, and can disconnect or replace it at any time from within the app.</li>
+      <li>You control which tags are used to detect out-of-office events.</li>
+      <li>You can request removal of any retained configuration by contacting support (see the <a href="support.html">Support</a> page).</li>
+    </ul>
+
+    <h2>Changes to this policy</h2>
+    <p>This policy may be updated as apps evolve. The "Last updated" date at the top of this page will reflect the most recent revision.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy can be directed via the <a href="support.html">Support</a> page.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="copy">© <span id="year"></span> Sandeepak Madhavan</span>
+    <nav>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
