@@ -206,6 +206,15 @@ nav.site-nav a:focus-visible {
 }
 .card .meta a:hover { text-decoration: underline; }
 
+.section-label {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin: 0 0 18px;
+}
+
 /* ===================================================================
    Prose (legal pages)
    =================================================================== */
@@ -286,6 +295,36 @@ nav.site-nav a:focus-visible {
   margin: 0;
 }
 
+.project-category {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin: 0 0 14px;
+}
+
+.detail-section {
+  margin: 0 0 40px;
+}
+
+.detail-section h2 {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 12px;
+}
+
+.detail-section p {
+  color: var(--text-secondary);
+  font-size: 15.5px;
+  max-width: 64ch;
+  margin: 0 0 14px;
+}
+
+.detail-section p:last-child { margin-bottom: 0; }
+
 .video-embed {
   position: relative;
   width: 100%;
@@ -331,6 +370,36 @@ nav.site-nav a:focus-visible {
 
 .feature-list li strong {
   color: var(--text-primary);
+}
+
+.steps-list {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.steps-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+.step-number {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px;
+  flex: none;
 }
 
 .app-links {

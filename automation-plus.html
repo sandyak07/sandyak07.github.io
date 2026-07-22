@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automation Plus | Sandyak Projects</title>
+<meta name="description" content="Automation Plus is a Freshdesk custom app in development for configurable ticket workflow validation, warnings, and agent confirmations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Sandeepak Madhavan</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="back-link" href="index.html">← All projects</a>
+
+  <section class="app-detail-header" aria-labelledby="project-title">
+    <div class="card-top">
+      <h1 id="project-title">Automation Plus</h1>
+      <span class="chip review">In Development</span>
+    </div>
+    <p class="project-category">Freshdesk Custom App</p>
+    <p class="lede">Automation Plus is a configurable Freshdesk custom app designed to add additional workflow safeguards directly within the ticket experience. It helps administrators define rules that can evaluate ticket context and provide agents with clear warnings or confirmations before selected actions continue.</p>
+  </section>
+
+  <section class="detail-section" aria-labelledby="problem-heading">
+    <h2 id="problem-heading">The problem</h2>
+    <p>Standard support workflows sometimes require additional checks that depend on an organisation's operating policies. Agents may need reminders before closing tickets, sending responses, changing important ticket properties, or completing other sensitive actions.</p>
+    <p>Automation Plus is intended to make these checks clearer and more consistent without forcing teams to rely only on documentation or manual supervision.</p>
+  </section>
+
+  <section class="detail-section" aria-labelledby="features-heading">
+    <h2 id="features-heading">Key features</h2>
+    <ul class="feature-list">
+      <li><span class="dot"></span><span><strong>Configurable workflow rules</strong> — define guidance that reflects your team's operating policies.</span></li>
+      <li><span class="dot"></span><span><strong>Ticket-context conditions</strong> — evaluate relevant ticket information before a configured workflow continues.</span></li>
+      <li><span class="dot"></span><span><strong>Agent warning messages</strong> — surface clear, timely reminders where they are most useful.</span></li>
+      <li><span class="dot"></span><span><strong>Confirmation before selected actions</strong> — give agents a clear choice to continue or return to the ticket.</span></li>
+      <li><span class="dot"></span><span><strong>Grouped ALL/ANY logic</strong> — combine conditions to express more focused workflow rules.</span></li>
+      <li><span class="dot"></span><span><strong>Administrative rule management</strong> — keep rule configuration in the hands of the people who manage workflows.</span></li>
+      <li><span class="dot"></span><span><strong>Clear validation and error states</strong> — make rule feedback understandable when input needs attention.</span></li>
+      <li><span class="dot"></span><span><strong>Privacy-conscious design</strong> — being designed around data minimisation and least-privilege access.</span></li>
+      <li><span class="dot"></span><span><strong>Responsive Freshdesk-aligned interface</strong> — designed to remain clear across the ticket experience.</span></li>
+    </ul>
+  </section>
+
+  <section class="detail-section" aria-labelledby="how-heading">
+    <h2 id="how-heading">How it works</h2>
+    <ol class="steps-list">
+      <li><span class="step-number">1</span><span>An administrator creates a workflow rule.</span></li>
+      <li><span class="step-number">2</span><span>The rule checks relevant ticket information.</span></li>
+      <li><span class="step-number">3</span><span>Automation Plus displays the configured warning or confirmation.</span></li>
+      <li><span class="step-number">4</span><span>The agent reviews the message and continues or returns to the ticket.</span></li>
+    </ol>
+  </section>
+
+  <section class="detail-section" aria-labelledby="status-heading">
+    <h2 id="status-heading">Current status</h2>
+    <p>Automation Plus is currently under active development and validation. Features and supported workflows may change before a public release.</p>
+  </section>
+
+  <section class="detail-section" aria-labelledby="privacy-heading">
+    <h2 id="privacy-heading">Privacy-conscious design</h2>
+    <p>Automation Plus is being designed around data minimisation and least-privilege access, with the goal of using only the information needed to support configured workflow guidance.</p>
+  </section>
+
+  <nav class="app-links" aria-label="Project links">
+    <a href="index.html">View other projects <span aria-hidden="true">→</span></a>
+    <a href="support.html">Contact me <span aria-hidden="true">→</span></a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="copy">© <span id="year"></span> Sandeepak Madhavan</span>
+    <nav aria-label="Footer navigation">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
